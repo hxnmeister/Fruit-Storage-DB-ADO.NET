@@ -32,6 +32,8 @@
             this.OptionsComboBox = new System.Windows.Forms.ComboBox();
             this.ExecuteCMDButton = new System.Windows.Forms.Button();
             this.DBTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.ParametersTextBox = new System.Windows.Forms.TextBox();
+            this.ParametersTextBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.FaVDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +50,21 @@
             // 
             this.OptionsComboBox.Enabled = false;
             this.OptionsComboBox.FormattingEnabled = true;
+            this.OptionsComboBox.Items.AddRange(new object[] {
+            "Відображення всієї інформації з таблиці овочів та фруктів",
+            "Відображення всіх назв овочів та фруктів",
+            "Відображення всіх кольорів",
+            "Показати максимальну калорійність",
+            "Показати мінімальну калорійність",
+            "Показати середню калорійність",
+            "Показати кількість овочів",
+            "Показати кількість фруктів",
+            "Показати кількість овочів та фруктів заданого кольору",
+            "Показати кількість овочів та фруктів кожного кольору",
+            "Показати овочі та фрукти з калорійністю нижче вказаної",
+            "Показати овочі та фрукти з калорійністю вище вказаної",
+            "Показати овочі та фрукти з калорійністю у вказаному діапазоні",
+            "Показати всі овочі та фрукти, у яких колір жовтий або червоний."});
             this.OptionsComboBox.Location = new System.Drawing.Point(12, 369);
             this.OptionsComboBox.Name = "OptionsComboBox";
             this.OptionsComboBox.Size = new System.Drawing.Size(776, 21);
@@ -74,11 +91,29 @@
             this.DBTypeComboBox.TabIndex = 3;
             this.DBTypeComboBox.SelectedIndexChanged += new System.EventHandler(this.DBTypeComboBox_SelectedIndexChanged);
             // 
+            // ParametersTextBox
+            // 
+            this.ParametersTextBox.Enabled = false;
+            this.ParametersTextBox.Location = new System.Drawing.Point(406, 396);
+            this.ParametersTextBox.Name = "ParametersTextBox";
+            this.ParametersTextBox.Size = new System.Drawing.Size(301, 20);
+            this.ParametersTextBox.TabIndex = 4;
+            // 
+            // ParametersTextBox1
+            // 
+            this.ParametersTextBox1.Location = new System.Drawing.Point(406, 423);
+            this.ParametersTextBox1.Name = "ParametersTextBox1";
+            this.ParametersTextBox1.Size = new System.Drawing.Size(301, 20);
+            this.ParametersTextBox1.TabIndex = 5;
+            this.ParametersTextBox1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ParametersTextBox1);
+            this.Controls.Add(this.ParametersTextBox);
             this.Controls.Add(this.DBTypeComboBox);
             this.Controls.Add(this.ExecuteCMDButton);
             this.Controls.Add(this.OptionsComboBox);
@@ -87,6 +122,7 @@
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.FaVDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +132,8 @@
         private System.Windows.Forms.ComboBox OptionsComboBox;
         private System.Windows.Forms.Button ExecuteCMDButton;
         private System.Windows.Forms.ComboBox DBTypeComboBox;
+        private System.Windows.Forms.TextBox ParametersTextBox;
+        private System.Windows.Forms.TextBox ParametersTextBox1;
     }
 }
 
